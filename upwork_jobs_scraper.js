@@ -16,3 +16,6 @@ temp_skill=[]
 for(let x=0;x<children_skills.length;x++){temp_skill.push(children_skills[x].innerText)}
 skills.push(temp_skill)}
 for(let i=0;i<title.length;i++){jobs.push({title:title[i],description:description[i],posted:posted[i],price:price[i],type:type[i],duration:duration[i],proposal:proposal[i],country:country[i],skills:skills[i],url:url[i]})}
+
+let json_data = JSON.stringify(jobs)
+console.log(json_data)
